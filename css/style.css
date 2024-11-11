@@ -556,6 +556,20 @@ section.counter-section {
   overflow-y: scroll;
 }
 
+.framework-slider.iot-frame {
+  height: 400px;
+}
+
+.iot-frame .slide-1 p {
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+}
+
+.iot-frame .slide-1 h3 {
+  font-size: 35px;
+}
+
 .framework-slider.tech-slide {
   height: 450px;
 }
@@ -2759,10 +2773,6 @@ img.iot-frame {
     max-width: 100%;
   }
 
-  img.iot-frame {
-    width: 100%;
-  }
-
   .text-section-1 {
     padding: 20px;
   }
@@ -3071,6 +3081,10 @@ img.iot-frame {
 @media screen and (max-width: 500px) {
   .timeline-slide:before {
     bottom: -20%;
+  }
+
+  img.iot-frame {
+    width: 100%;
   }
 }
 
