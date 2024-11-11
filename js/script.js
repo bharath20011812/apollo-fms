@@ -291,5 +291,26 @@ $(document).ready(function () {
     var slideIndex = $(this).data('slide');
     $('#slider1').slick('slickGoTo', slideIndex);
     $('#slider2').slick('slickGoTo', slideIndex);
+
+    // Remove active classes from all thumbnails, icons, and subheadings
+    $('.thumbnail').removeClass('active');
+    $('.icon').removeClass('active');
+    $('.feature_sub_heading').removeClass('active_sub_heading');
+
+    // Rotate main circle
+    $('#main_circle').addClass('rotating');
+    setTimeout(() => {
+      $('#main_circle').removeClass('rotating');
+    }, 1000);
+
+    // Set active states for the clicked thumbnail, corresponding icon, and subheading
+    $(this).addClass('active');
+    $('.icon').eq(slideIndex).addClass('active');
+    $('.feature_sub_heading').eq(slideIndex).addClass('active_sub_heading');
   });
 });
+
+
+
+
+
