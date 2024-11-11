@@ -556,6 +556,10 @@ section.counter-section {
   overflow-y: scroll;
 }
 
+.framework-slider.tech-slide {
+  height: 450px;
+}
+
 /* Animation for Entrance */
 @keyframes fadeInLeft {
   from {
@@ -848,7 +852,6 @@ section.your-trused {
   position: sticky;
   top: 0;
   padding: 20px;
-  height: 500px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -2287,6 +2290,7 @@ section.sealing-section {
 
 img.iot-frame {
   width: 60%;
+  margin-top: 50px;
 }
 
 .wow,
@@ -2352,6 +2356,14 @@ img.iot-frame {
 
   .tab-button {
     font-size: 15px;
+  }
+
+  .tech-slide h3 {
+    font-size: 30px;
+  }
+
+  .tech-slide p {
+    font-size: 18px;
   }
 }
 
