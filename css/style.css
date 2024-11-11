@@ -331,7 +331,7 @@ nav .icon-burger .line {
 }
 
 .client-patner .item.box {
-  width: 80%;
+  width: 100%;
 }
 
 .slide-1 img {
@@ -507,7 +507,6 @@ section.counter-section {
 } */
 
 .service-bg img {
-  transform: translate(-30%, 0) rotate(-0deg);
   height: 100%;
 }
 
@@ -518,7 +517,7 @@ section.counter-section {
   padding: 0;
   top: 45%;
   text-align: center;
-  right: -1.5rem;
+  right: -2.5rem;
 }
 
 .service-logo img {
@@ -527,13 +526,66 @@ section.counter-section {
   padding: 30px 0;
 }
 
-.service-bg {
+.seroffer-imgsec .service-bg {
   position: absolute;
-  width: 20%;
-  height: 100%;
-  top: 0;
+  width: 1000px;
+  height: 1000px;
+  top: -7rem;
   text-align: center;
   right: 0;
+  z-index: 1;
+}
+
+.seroffer-imgsec .nav_circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInLeft 1s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.text-section-1 .framework-slider {
+  margin-left: 0;
+  margin-right: 0;
+  height: 300px;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+/* Animation for Entrance */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.active_sub_heading {
+  display: block;
+}
+
+/* Rotation Animation */
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+#main_circle.rotating {
+  animation: rotateCircle .3s ease-in-out;
 }
 
 .service-mainimg img {
@@ -657,6 +709,7 @@ section.counter-section {
 .framework-slider .slide-1 p {
   width: 90%;
   margin: auto;
+  font-size: 22px;
 }
 
 .text-content .common-btn a,
@@ -788,7 +841,7 @@ section.your-trused {
 }
 
 .facility-frame .slider-main-div-1 {
-  align-items: start;
+  align-items: center;
 }
 
 .facility-frame .image-section-1 {
@@ -833,7 +886,7 @@ section.your-trused {
 }
 
 .slide-1 h3 {
-  font-size: 25px;
+  font-size: 40px;
   margin-bottom: 15px;
   color: #800080;
   font-weight: 600;
@@ -2232,11 +2285,6 @@ section.sealing-section {
   width: 50%;
 }
 
-
-.facility-frame .image-section-1 img {
-  margin-top: 70px;
-}
-
 img.iot-frame {
   width: 60%;
 }
@@ -2898,6 +2946,15 @@ img.iot-frame {
 
   .services {
     padding: 50px 0px;
+  }
+
+  .slide-1 h3 {
+    font-size: 25px;
+  }
+
+  .slide-1 img {
+    width: 25% !important;
+    margin: 0 auto 10px;
   }
 
   .service-mobinner {
