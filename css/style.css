@@ -556,6 +556,17 @@ section.counter-section {
   overflow-y: scroll;
 }
 
+.framework-slider {
+  overflow: auto;
+  -webkit-scroll-snap-type: y mandatory;
+      -ms-scroll-snap-type: y mandatory;
+          scroll-snap-type: y mandatory;
+}
+
+.slide-1 {
+  scroll-snap-align: start;
+}
+
 .framework-slider.iot-frame {
   height: 400px;
 }
@@ -835,9 +846,11 @@ section.your-trused {
 
 .your-trused-sub h3 {
   color: #720561;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Playfair-bold';
   height: 60px;
+  width: 90%;
+  margin: auto;
 }
 
 .your-trused h2 {
@@ -946,7 +959,7 @@ span.dot.active {
 }
 
 section.Our-framework {
-  padding: 0rem 0 50px;
+  padding: 50px 0 ;
 }
 
 /* Industries section start */
@@ -2543,6 +2556,10 @@ img.iot-frame {
   .row.apollo-story {
     align-items: center;
     padding-top: 0px;
+  }
+
+  .your-trused-sub h3 {
+    width: 100%;
   }
 
   /* case study */
