@@ -1893,7 +1893,7 @@ button.tab-button.active.Services-tabbtn {
   position: relative;
 }
 
-.services-tabsec .Services-tabbtn:after {
+/* .services-tabsec .Services-tabbtn:after {
   content: '+';
   width: 20px;
   height: 20px;
@@ -1901,7 +1901,7 @@ button.tab-button.active.Services-tabbtn {
   right: 3%;
   font-size: 30px;
   top: 15%;
-}
+} */
 
 .services-contsec .Services-inrcont {
   padding: 10px 0;
